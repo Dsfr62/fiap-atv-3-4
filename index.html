@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +7,22 @@
     <title>Fase 3 - Atividade 4</title>
 </head>
 <body>
-    <form style="padding: 1rem; margin-top: 1rem; display:flex; flex-direction: column; width: 20%; gap: 0.5rem;">
-        <label>Insira o primeiro número</label>
-        <input type="number" id="first-number" required/>
-        <label>Insira o segundo número</label>
-        <input type="number" id="second-number" required/>
-        <div>
-            <button id="adicao" type="submit">somar</button>
-            <button id="subtracao" type="submit">subtrair</button>
-            <button id="divisao" type="submit">dividir</button>
-            <button id="multiplicacao" type="submit">multiplicar</button>
+    <h1 class="text-3xl text-sky-800 mt-2 ml-2.5">Calcule aqui!</h1>
+    <form class="px-4 py-2.5 mt-1 flex flex-col w-[100%] md:w-[40%]">
+        <label for="first-number">Insira o primeiro número</label>
+        <input type="number" id="first-number" class="rounded border border-sky-600 py-1.5 px-1 mb-4 w-[100%]" required/>
+        <label for="second-number">Insira o segundo número</label>
+        <input type="number" id="second-number" class="rounded border border-sky-600 py-1.5 px-1 mb-4 w-[100%]" required/>
+        <div class="flex gap-2 w-[100%]">
+            <button class="px-2 py-1 bg-sky-600 text-white rounded w-[25%] font-medium" id="adicao" type="submit">somar</button>
+            <button class="px-2 py-1 bg-sky-600 text-white rounded w-[25%] font-medium" id="subtracao" type="submit">subtrair</button>
+            <button class="px-2 py-1 bg-sky-600 text-white rounded w-[25%] font-medium" id="divisao" type="submit">dividir</button>
+            <button class="px-2 py-1 bg-sky-600 text-white rounded w-[25%] font-medium" id="multiplicacao" type="submit">multiplicar</button>
         </div>
-        <p id="resultado"></p>
+        <p id="resultado" class="mt-4 text-white font-semibold rounded bg-sky-600 text-lg text-center" ></p>
     </form>
     <script src="index.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
