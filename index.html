@@ -7,17 +7,18 @@
     <title>Fase 3 - Atividade 4</title>
 </head>
 <body>
-    <div style="padding: 1rem; margin-top: 1rem; display:flex; flex-direction: column; width: 20%; gap: 0.5rem;">
+    <form style="padding: 1rem; margin-top: 1rem; display:flex; flex-direction: column; width: 20%; gap: 0.5rem;">
         <label>Insira o primeiro número</label>
-        <input type="number" id="first-number" />
+        <input type="number" id="first-number" required/>
         <label>Insira o segundo número</label>
-        <input type="number" id="second-number" />
+        <input type="number" id="second-number" required/>
         <div>
-            <button type="button">somar</button>
-            <button type="button">subtrair</button>
-            <button type="button">dividir</button>
-            <button type="button">multiplicar</button>
+            <button id="adicao" type="submit">somar</button>
+            <button id="subtracao" type="submit">subtrair</button>
+            <button id="divisao" type="submit">dividir</button>
+            <button id="multiplicacao" type="submit">multiplicar</button>
         </div>
-    </div>
+    </form>
+    <script src="index.js"></script>
 </body>
 </html>
